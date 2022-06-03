@@ -1,0 +1,51 @@
+﻿
+ @model IEnumerable<LTIWEBAPPDEMO.Models.Vehicle>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row bg-title">
+   @* <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+        <h4 class="page-title">Vehicals</h4>
+    </div>
+    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+        <button class="right-side-toggle waves-effect waves-light btn-info btn-circle pull-right m-l-20"><i class="ti-settings text-white"></i></button>*@
+        <ol class="breadcrumb">
+         @*   <li><a href="#">Dashboard</a></li>*@
+            <li class="active">Dashboard</li>
+        </ol>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="white-box">
+            <h3 class="box-title m-b-0">List of Vehicles</h3>
+<table class="table">
+    <thead>
+        <tr>
+          @*  <th>
+               Vehicle 
+            </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.VehicleName)
+            </td>
+          @*  <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>*@
+        </tr>
+}
+    </tbody>
+</table>
+        </div>
+    </div>
+ 
+</div>
