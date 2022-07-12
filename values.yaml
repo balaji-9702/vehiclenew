@@ -24,6 +24,6 @@ variables:
 - name: BuildtechUI
   value: Angular
 - name: BuildtechBackend
-  value: python
+  value: Net
 - name: Templates
   value: projects
