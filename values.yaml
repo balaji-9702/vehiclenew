@@ -1,0 +1,29 @@
+variables:
+- name: repository
+  value: MygitHubRepo
+- name: type
+  value: github
+- name: endpoint
+  value: Mygit
+- name: name
+  value: balaji-9702/Templates
+- name: vmImage
+  value: windows-latest
+- name: webapp
+  value: insight-webapp
+- name: apptype
+  value: webApp
+- name: azureSubscription
+  value: Free Trial (180be318-3bda-484b-9b28-27ffcbe8b622)  
+- name: artifact
+  value: drop  
+- name: solution
+  value: "**/*.sln"
+- name: buildConfiguration
+  value: Release
+- name: BuildtechUI
+  value: Angular
+- name: BuildtechBackend
+  value: python
+- name: Templates
+  value: projects
